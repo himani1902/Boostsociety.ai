@@ -1,0 +1,148 @@
+/* ====== FOOTER STYLES ====== */
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  color: white;
+}
+
+/* 🔹 Increased Height for Top Purple Section (Subscription) */
+.footer-top {
+  background: rgb(82, 49, 104);
+  padding: 5% 3.5% 4% 4%;; /* Increased height */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  /* margin-right: 40px; */
+}
+
+.subscribe-input {
+  width: 430px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+}
+
+.subscribe-button {
+  background: linear-gradient(98deg, rgb(228, 103, 3) -1.68%, rgb(199, 52, 13) 103.45%);
+  color: rgba(0, 0, 0, 0.26);
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.subscribe-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.subscribe-button.valid {
+  color: white;
+}
+
+.confirmation-message {
+  color: white;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+/* 🔹 Middle White Section (Left-Aligned Logo) */
+
+.footer-middle {
+  /* background-color: white; */
+  padding: 90px 20px; /* Increased height */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center content horizontally */
+  position: relative; /* Needed for absolute positioning */
+  color: #333;
+  padding-bottom: 8%;
+  text-decoration: none;
+}
+
+/* Adjusted Boost Logo Position (Left-Aligned) */
+.footer-logo {
+  width: 140px;
+  position: absolute;
+  left: 20px; /* Move logo to the left */
+  margin-left: 40px;
+}
+
+/* Footer Links (Centered) */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 25px;
+}
+
+/* Remove dots before navigation links */
+.footer-links li {
+  list-style-type: none;
+  position: relative;
+}
+
+/* Explicitly remove ::before marker */
+.footer-links li::before {
+  content: none !important;
+  display: none;
+}
+
+.footer-links li a {
+  color: #262626de;
+  cursor: pointer;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+
+}
+
+/* 🔹 Bottom Purple Section */
+.footer-bottom {
+  height: 100%;
+    background: rgb(82, 49, 104);
+    padding: 15px 20px 13px 55px ;
+  display: flex;
+
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+
+/* Bottom Links (No Dots) */
+.footer-bottom-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  margin-right: 30px;
+}
+
+/* 🔹 Remove dots before bottom section links */
+.footer-bottom-links li {
+  list-style-type: none;
+  position: relative;
+}
+
+/* Explicitly remove ::before marker */
+.footer-bottom-links li::before {
+  content: none !important;
+  display: none;
+}
+
+.footer-bottom-links li a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.75);
+}

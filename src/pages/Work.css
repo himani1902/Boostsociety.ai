@@ -1,0 +1,106 @@
+.work-container {
+    background: url("./backgroundImage/backimage.png") no-repeat center center/cover;
+    /* width: 100%; */
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the left */
+    position: relative;
+    padding: 0 4%;
+  }
+  
+  .overlaywork {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+   
+  }
+  
+  .contenttext {
+  /* Adjust width as needed */
+    padding-left: 3px; /* Only 5px gap from the left */
+    padding-bottom: 20%;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    height: 60%;
+    width: 50%;
+    text-align: left;
+  }
+  
+  .contenttext  h5 {
+    font-size: 20px;
+    /* font-weight: 600; */
+    margin-bottom: 0px;
+    margin-top: 7%;
+    /* font-family: "Times New Roman", Times, serif; */
+    font-family: "Alumni Sans", sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.00938em;
+  
+  }
+  
+  .contenttext  p {
+    /* font-size: 50px;
+    font-weight: bold;
+    color:#e44d26;
+    margin: 0; */
+  
+  margin: 0px;
+    font-family: outfit;
+    font-size: 58px;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: transparent;
+    z-index: 1;
+    width: 80vw;
+    font-weight: 500;
+    background: linear-gradient(98deg, rgb(228, 103, 3) -1.68%, rgb(199, 52, 13) 103.45%) text;
+}
+  .contenttext h3 {
+    
+    font-size: 30px;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 0;
+    
+  }
+  
+  ol {
+    margin-top: 2%;
+    padding-left: 55px;
+   
+    font-family: outfit;
+    font-size: 1rem;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: white;
+    padding-top: 0.5px;
+    font-weight: 500;
+    
+  }
+  
+  ol li {
+    /* margin:0;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 600; */
+    
+    font-family: outfit;
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    color: white;
+    padding-top: 0.5px;
+    font-weight: 600;
+  }
+  
+  @media (max-width: 1009px) {
+    .content {
+      width: 80%;
+      padding-left: 5px;
+    }
+  }
+  

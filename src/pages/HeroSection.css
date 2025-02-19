@@ -1,0 +1,224 @@
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 85vh;
+    margin-top: 45px;
+    overflow: hidden;
+    font-family: "Outfit", sans-serif;
+}
+
+.hero-carousel {
+    display: flex;
+    width: 100%; /* Carousel width */
+    transition: transform 0.8s ease-in-out;
+}
+
+.hero-slide {
+    width: 100vw; 
+    height: 85vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    position: relative;
+}
+
+/* Orange Design for Corners */
+.hero-slide:first-child::before,
+.hero-slide:first-child::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    background-color: #d95500;
+    z-index: 2;
+}
+
+.hero-slide:first-child::before {
+    top: 0;
+    left: 0;
+    clip-path: polygon(0% 0, 100% 100%, 0 0);
+}
+
+.hero-slide:first-child::after {
+    bottom: 0;
+    right: 0;
+    clip-path: polygon(0% 0, 100% 100%, 0 0);
+}
+
+.hero-slide:nth-child(2)::before,
+.hero-slide:nth-child(2)::after {
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    background-color: #d95500;
+    z-index: 2;
+}
+
+.hero-slide:nth-child(2)::before {
+    top: 0;
+    right: 0;
+    clip-path: polygon(0% 0, 100% 100%, 0 0);
+}
+
+.hero-slide:nth-child(2)::after {
+    bottom: 0;
+    left: 0;
+    clip-path: polygon(0% 0, 100% 100%, 0 0);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 0 4%;
+}
+
+.content {
+    color: #fff;
+    padding: 4px;
+    font-family: "Outfit", sans-serif;
+    padding-bottom: 19%;
+}
+
+.content h1 {
+    font-size: 4vw;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.content p {
+    color: #ffffffbf;
+    font-family: Outfit;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: .4px;
+    line-height: 139%;
+    margin: 0 0 20px;
+    width: 56%;
+}
+.cta-button {
+    align-items: center;
+    background: linear-gradient(98deg, #e46703 -1.68%, #c7340d 103.45%);
+    border: none;
+    border-radius: 11.62px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.2em;
+    font-weight: 600;
+    gap: 3.5rem; /* Adjusted to match image */
+    height: fit-content;
+    justify-content: center;
+    padding: 20px 30px;
+    position: absolute;
+    right: 300px;
+    top: 335px;
+    width: 270px;
+    transition: all 0.3s ease-in-out;
+}
+
+.arrow-icon {
+    font-size: 1.3rem; /* Adjusted icon size */
+    color: #fff; /* White color */
+    margin-left: -2rem; /* Shift arrow closer to text */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.arrow-icon {
+    font-size: 1.5rem; /* Adjust icon size */
+    transition: transform 0.3s ease-in-out;
+    
+    
+}
+
+
+.cta-button:hover {
+    background-color: #b64500;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background: #fff;
+}
+@media screen and (max-width: 1330px) {
+    /* Styles for small mobile screens */
+    
+    
+    .cta-button {
+        align-items: center;
+        background: linear-gradient(98deg, #e46703 -1.68%, #c7340d 103.45%);
+        border: none;
+        border-radius: 11.62px;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-size: 1.2em;
+        font-weight: 600;
+        gap: 3.5rem; /* Adjusted to match image */
+        height: fit-content;
+        justify-content: center;
+        padding: 20px 30px;
+        position: absolute;
+        right: 280px;
+        top: 535px;
+        width: 270px;
+        transition: all 0.3s ease-in-out;
+    }
+
+  }
+  @media screen and (max-width:495px) {
+    /* Styles for small mobile screens */
+    
+    
+    .cta-button {
+        align-items: center;
+        background: linear-gradient(98deg, #e46703 -1.68%, #c7340d 103.45%);
+        border: none;
+        border-radius: 11.62px;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        font-size: 1.2em;
+        font-weight: 600;
+        gap: 3.5rem; /* Adjusted to match image */
+        height: fit-content;
+        justify-content: center;
+        padding: 10px 20px;
+        position: absolute;
+        left: 20px;
+        top: 605px;
+        width: 200px;
+        transition: all 0.3s ease-in-out;
+    }
+
+  }
