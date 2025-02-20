@@ -1,7 +1,7 @@
 .hero-section {
     position: relative;
     width: 100vw;
-    height: 85vh;
+    /* height: 85vh; */
     margin-top: 45px;
     overflow: hidden;
     font-family: "Outfit", sans-serif;
@@ -170,55 +170,115 @@
 .dot.active {
     background: #fff;
 }
-@media screen and (max-width: 1330px) {
-    /* Styles for small mobile screens */
-    
-    
+@media screen and (max-width: 1000px) {
+    /* Styles for {small mobile screens */
+    .hero-slide {
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        display: flex;
+
+        flex-direction: column;
+        height: 40vh;
+        width: 100%;
+    }
+    .content h1 {
+        font-size: 4vw;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1.4px;
+        margin-bottom: 20px;
+        margin-top: 13%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-transform: capitalize;
+        white-space: nowrap;
+        width: 100%;
+    }
+    .content p {
+        color: #ffffffbf;
+        font-family: Outfit;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: .4px;
+        line-height: 139%;
+        margin: 0;
+        width: 60%;
+    }
     .cta-button {
         align-items: center;
         background: linear-gradient(98deg, #e46703 -1.68%, #c7340d 103.45%);
+        background: var(--Linear, linear-gradient(98deg, #e46703 -1.68%, #c7340d 103.45%));
         border: none;
         border-radius: 11.62px;
         color: #fff;
         cursor: pointer;
-        display: flex;
-        font-size: 1.2em;
+        display: flex
+;
+        font-size: 1em;
         font-weight: 600;
-        gap: 3.5rem; /* Adjusted to match image */
+        
         height: fit-content;
         justify-content: center;
-        padding: 20px 30px;
-        position: absolute;
-        right: 280px;
-        top: 535px;
-        width: 270px;
-        transition: all 0.3s ease-in-out;
+        margin-top: 1rem;
+        padding: 12px 30px;
+        position: static;
+        right: 300px;
+        top: 300px;
+        width: fit-content;
     }
 
   }
-  @media screen and (max-width:495px) {
+  @media screen and (max-width:600px) {
     /* Styles for small mobile screens */
     
-    
+    .content h1 {
+        font-size: 5vw;
+        font-style: normal;
+        font-weight: 700;
+        letter-spacing: 1.4px;
+        margin-bottom: 10px;
+        margin-top: 13%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-transform: capitalize;
+        white-space: nowrap;
+        width: 100%;
+    }
     .cta-button {
         align-items: center;
         background: linear-gradient(98deg, #e46703 -1.68%, #c7340d 103.45%);
+        background: var(--Linear, linear-gradient(98deg, #e46703 -1.68%, #c7340d 103.45%));
         border: none;
         border-radius: 11.62px;
         color: #fff;
         cursor: pointer;
-        display: flex;
-        font-size: 1.2em;
+        display: flex
+;
+        font-size: 1em;
         font-weight: 600;
-        gap: 3.5rem; /* Adjusted to match image */
+       
         height: fit-content;
         justify-content: center;
-        padding: 10px 20px;
-        position: absolute;
-        left: 20px;
-        top: 605px;
-        width: 200px;
-        transition: all 0.3s ease-in-out;
+        margin-top: 1rem;
+        padding: 12px 30px;
+        position: static;
+        right: 300px;
+        top: 200px;
+        width: fit-content;
+    }
+    .content p {
+    color: #ffffffbf;
+        font-family: Outfit;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: .4px;
+        line-height: 139%;
+        margin: 0;
+        width: 80%;
     }
 
   }

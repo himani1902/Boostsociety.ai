@@ -1,10 +1,10 @@
 .partners {
   text-align: center;
-  padding:  0 4%;
+  padding: 0 4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Alumni Sans", sans-serif ;
+  font-family: "Alumni Sans", sans-serif;
   font-size: 20px;
 }
 
@@ -16,7 +16,6 @@
 
 .partners-content {
   margin: 10px 10px;
-  
 }
 
 .partners-content h2 {
@@ -32,7 +31,7 @@
   line-height: 1.334;
   letter-spacing: 0em;
   font-size: 18px;
-  color: rgba(63, 60, 60, 0.87); 
+  color: rgba(63, 60, 60, 0.87);
 }
 
 .carousel-container {
@@ -56,54 +55,72 @@
   transition: transform 0.5s ease-in-out;
 }
 
-
-
 .partners-carousel .partner-card {
-  flex: 0 0 26.6%; /* Default width */
-  max-width: 500px;
+  flex: 0 0 30%; /* Ensures all cards have the same width */
+  max-width: 30%;
+
+  background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  user-select: none;
+}
+.partners-carousel .partner-card .partner-card-container {
+  padding: 30px 0;
+  max-width: 93%;
+  position: relative;
   background: rgba(82, 49, 104, 0.1);
-    position: relative;
-   
-    user-select: none;
-    cursor: pointer;
-    border: 1px solid #dcdcdc;
-    border-radius: 10px 10px 10px 14px;
-    height: 340px;
-    margin-right : 2%;
-    padding: 20px 0px;  
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Image aur text left align honge */
-    text-align: left; /* Text bhi left-align hoga */
-  }
+  cursor: pointer;
+  border: 1px solid #dcdcdc;
+  border-radius: 10px 10px 10px 14px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+}
 
+.partners-carousel .partner-card .partner-card-container .card-content {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 18%;
+}
 
-
-
-
-.partners-carousel .partner-card img {
-
-  align-self: flex-start; /* Image ko left side move karega */
-  height: 5vw;
-  margin-left: 40px; /* Thoda left se gap dene ke liye */
+.partners-carousel .partner-card .card-logo {
+  position: absolute;
+  top: 30px;
+  left: 14%;
+  height: 4.5vw;
 }
 
 .partners-carousel .partner-card h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bold;
   text-align: justify;
-  margin: 5px 30px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .partners-carousel .partner-card p {
-    font-family: outfit;
-    font-weight: 400;
-    font-size: 1rem;
-    letter-spacing: 0.00938em;
-    color: rgba(63, 60, 60, 0.87);
-    overflow: hidden;
-    text-align: justify;
-    margin: 10px 30px;
+  font-family: outfit;
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.00938em;
+  color: rgba(63, 60, 60, 0.87);
+  overflow: hidden;
+  text-align: justify;
+  overflow: hidden;
+  display: -webkit-box; /* Enables multi-line ellipsis */
+  -webkit-line-clamp: 6; /* Number of lines to display before ellipsis */
+  -webkit-box-orient: vertical; /* Arrange content in a vertical direction */
+  text-overflow: ellipsis;
 }
 
 .partners-carousel .partner-card a {
@@ -113,21 +130,18 @@
   margin-top: 1rem;
   text-decoration: none; */
   font-family: outfit;
-    font-weight: 400;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
-    font-size: 22px;
-    color: rgb(84, 47, 3);
-    /* cursor: pointer; */
-    position: absolute;
-    bottom: 23px;
-    left: 40px;
-    text-decoration: none;
-    margin: 0px;
-  
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  font-size: 1.2rem;
+  color: rgb(84, 47, 3);
+  /* cursor: pointer; */
+  position: absolute;
+  bottom: 23px;
+  left: 40px;
+  text-decoration: none;
+  margin: 0px;
 }
-
-
 
 .side-design {
   position: absolute;
@@ -181,18 +195,18 @@
     width: 100%;
     margin: auto;
   }
-  
+
   .partners-carousel-wrapper {
     overflow: hidden;
     width: 100%;
   }
-  
+
   .partners-carousel {
     display: flex;
     scroll-behavior: smooth;
     transition: transform 0.5s ease-in-out;
   }
-  
+
   .partners-carousel .partner-card a {
     /* display: block;
     color: #ff6600;
@@ -200,18 +214,110 @@
     margin-top: 1rem;
     text-decoration: none; */
     font-family: outfit;
-      font-weight: 400;
-      line-height: 1.5;
-      letter-spacing: 0.00938em;
-      font-size: 22px;
-      color: rgb(84, 47, 3);
-      /* cursor: pointer; */
-      position: absolute;
-      bottom: 23px;
-      left: 40px;
-      text-decoration: none;
-      margin: 0px;
-    
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.00938em;
+    font-size: 22px;
+    color: rgb(84, 47, 3);
+    /* cursor: pointer; */
+    position: absolute;
+    bottom: 23px;
+    left: 40px;
+    text-decoration: none;
+    margin: 0px;
   }
 }
 
+/* ------------------------------cards auto width change------------------------------------------- */
+
+@media (max-width: 600px) {
+  .carousel-container {
+    width: 100%;
+  }
+  .carousel-container .partners-carousel-wrapper {
+    width: 100%;
+  }
+
+  .carousel-container .partners-carousel-wrapper .partners-carousel {
+    width: 100%;
+  }
+
+  .carousel-container
+    .partners-carousel-wrapper
+    .partners-carousel
+    .partner-card {
+    min-width: 100%;
+    height: 272px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .carousel-container
+    .partners-carousel-wrapper
+    .partners-carousel
+    .partner-card
+    .partner-card-container {
+    min-width: 98%;
+    height: 272px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .partners-carousel .partner-card p {
+    font-size: 0.9rem;
+  }
+
+  .partners-carousel .partner-card .card-logo {
+    top: 50px;
+    height: 50px;
+    left: 60px;
+  }
+  .partners-carousel .partner-card .partner-card-container .card-content {
+    margin-top: 20px;
+  }
+  .partners-carousel .partner-card .partner-card-container .card-content h3 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .partners-carousel .partner-card .partner-card-container .card-content p {
+    max-height: 100px;
+    overflow: hidden;
+    display: -webkit-box; /* Enables multi-line ellipsis */
+    -webkit-line-clamp: 5; /* Number of lines to display before ellipsis */
+    -webkit-box-orient: vertical; /* Arrange content in a vertical direction */
+    text-overflow: ellipsis;
+  }
+  .partners-content p {
+    margin: 0 0 0 0;
+    font-family: outfit;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0em;
+    font-size: 18px;
+    color: rgba(63, 60, 60, 0.87);
+  }
+  .partners-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .partners-carousel .partner-card p {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 670px) {
+  .partners-carousel .partner-card a {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .partners-carousel .partner-card a {
+    font-size: 1.2rem;
+    margin-bottom: 8%;
+    margin-left: 5%;
+  }
+}

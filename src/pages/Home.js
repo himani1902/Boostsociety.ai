@@ -14,7 +14,7 @@ const Home = () => {
     const handleWheel = (event) => {
       event.preventDefault();
       window.scrollBy({
-        top: event.deltaY > 0 ? window.innerHeight / 2 : -window.innerHeight / 2, // Slower scrolling
+        top: event.deltaY > 0 ? window.innerHeight / 10 : -window.innerHeight / 10, // Slower scrolling
         behavior: "smooth",
       });
     };

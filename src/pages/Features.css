@@ -55,7 +55,7 @@
   }
   
   .view-all-btn {
-    background-color: #ff5a1f;
+    background: linear-gradient(98deg, rgb(228, 103, 3) -1.68%, rgb(199, 52, 13) 103.45%);
     color: white;
     border: none;
     padding: 12px 20px;
@@ -146,6 +146,56 @@
   
     .cards-container {
       grid-template-columns: 1fr;
+      margin-bottom: 12px;
     }
   }
-  
+  @media (max-width: 900px) {
+  .cards-container{
+    flex-basis: 100%;
+    -webkit-box-flex: 0;
+    flex-grow: 0;
+    max-width: 100%;
+}
+  }
+
+  @media (max-width: 600px) {
+
+    .main-heading {
+      font-size: 30px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: black;
+    }
+    .text-content p {
+      margin: 16px 0px;
+      font-family: outfit;
+      line-height: 1.5;
+      letter-spacing: 0.00938em;
+      font-size: 15px;
+      font-weight: 400;
+      color: rgba(63, 60, 60, 0.87);
+  }
+
+ 
+    
+}
+  @media (max-width: 500px) {
+
+    .main-heading {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 20px;
+      color: black;
+    }
+    .text-content p {
+      margin: 16px 0px;
+      font-family: outfit;
+      line-height: 1.5;
+      letter-spacing: 0.00938em;
+      font-size: 12px;
+      font-weight: 400;
+      color: rgba(63, 60, 60, 0.87);
+  }
+
+
+  }

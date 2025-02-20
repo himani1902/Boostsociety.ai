@@ -26,15 +26,17 @@
     color: white;
     font-family: "Outfit", sans-serif;
     height: 60%;
-    width: 50%;
+    width: 45%;
     text-align: left;
+    position: absolute;
+    z-index: 10;
   }
   
   .contenttext  h5 {
     font-size: 20px;
     /* font-weight: 600; */
     margin-bottom: 0px;
-    margin-top: 7%;
+    margin-top: 10%;
     /* font-family: "Times New Roman", Times, serif; */
     font-family: "Alumni Sans", sans-serif;
     font-weight: 600;
@@ -62,7 +64,7 @@
   .contenttext h3 {
     
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 15px;
     margin-bottom: 0;
     
@@ -72,14 +74,7 @@
     margin-top: 2%;
     padding-left: 55px;
    
-    font-family: outfit;
-    font-size: 1rem;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
-    color: white;
-    padding-top: 0.5px;
-    font-weight: 500;
-    
+  
   }
   
   ol li {
@@ -89,18 +84,215 @@
     font-weight: 600; */
     
     font-family: outfit;
-    font-size: 18px;
+    font-size: 19px;
     line-height: 1.5;
     letter-spacing: 0.00938em;
     color: white;
     padding-top: 0.5px;
-    font-weight: 600;
+    font-weight: 400;
   }
   
-  @media (max-width: 1009px) {
+  /* @media (max-width: 1009px) {
     .content {
       width: 80%;
       padding-left: 5px;
     }
   }
+   */
+
+
+   /* @media (max-width: 1250px) {
+    .contenttext {
+    left: 50px;
+    top: 25px;
+    }
+    .contenttext  h5 {
+      margin: 20px 0 0 0;
+     
+    }
+    .contenttext  p{
+      font-size: 58px;
+      height: 20%;
+
+    }
+    .contenttext h3 {
+      font-size: 30px;
+      margin: 0;
+
+    }
+    ol li{
+      font-size: 18px;
+    }
+  }
+  @media (max-width: 900px) {
+    .contenttext {
+    
+    top: 30px;
+    }
+    .contenttext  h5 {
+      margin-top: 1 rem;
+     
+    }
+    .contenttext  p{
+      font-size: 40px;;
+
+    }
+    .contenttext h3 {
+      font-size: 25px;
+      
+
+    }
+    ol li{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 600px) {
+    .contenttext {
+   
+    top: 20px;
+    }
+    .contenttext  h5 {
+      margin-top: 1.5 rem;
+     
+    }
+    .contenttext  p{
+      font-size: 30px;;
+
+    }
+    .contenttext h3 {
+      font-size: 28px;
+      
+
+    }
+    ol li{
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 0px) {
+    .contenttext {
+   left: 20px;
+    top: 5px;
+    }
+   
+    .contenttext  p{
+      font-size: 20px;;
+
+    }
+    .contenttext h3 {
+      font-size: 15px;
+      
+
+    }
+    ol li{
+      font-size: 13px;
+    }
+  } */
+
+  /* Responsive Design */
+  @media (max-width: 1500px) {
+    .work-container {
+      background: url("./backgroundImage/backimage2.png") no-repeat center center/cover;
+      /* width: 100%; */
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Aligns content to the left */
+      position: relative;
+      padding: 0 4%;
+    }
+    ol li {
+      font-size: 16px;
+    }
+  }
+@media (max-width: 1200px) {
+  .work-container {
+    background: url("./backgroundImage/backimage2.png") no-repeat center center/cover;
+    /* width: 100%; */
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligns content to the left */
+    position: relative;
+    padding: 0 4%;
+  }
   
+  .contenttext {
+    width: 60%;
+  }
+  .contenttext p {
+    font-size: 40px;
+  }
+  .contenttext h3 {
+    font-size: 22px;
+  }
+  ol li {
+    font-size: 17px;
+  }
+
+.contenttext  h5 {
+  margin-top: 0;
+  font-size: 18px;
+ 
+}
+}
+@media (max-width: 980px) {
+  .contenttext {
+    width: 70%;
+  }
+  .contenttext p {
+    font-size: 35px;
+  }
+  .contenttext h3 {
+    font-size: 20px;
+  }
+  ol li {
+    font-size: 15px;
+  }
+  .contenttext  h5 {
+    margin-top: 1.5 rem;
+    font-size: 16px;
+   
+  }
+}
+
+@media (max-width: 600px) {
+  .work-container {
+    height: auto;
+    padding: 20px;
+  }
+  .contenttext {
+    width: 90%;
+    padding: 10px;
+    position: static;
+  }
+  .contenttext p {
+    font-size: 28px;
+  }
+  .contenttext h3 {
+    font-size: 18px;
+  }
+  ol li {
+    font-size: 12px;
+  }
+  .contenttext  h5 {
+    margin-top: 1.5 rem;
+    
+   
+  }
+}
+
+@media (max-width: 400px) {
+  .contenttext p {
+    font-size: 24px;
+  }
+  .contenttext h3 {
+    font-size: 16px;
+  }
+  ol li {
+    font-size: 11px;
+  }
+  .contenttext  h5 {
+    margin-top: 0;
+   font-size: 12px;
+  }
+}

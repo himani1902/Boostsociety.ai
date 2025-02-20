@@ -1,6 +1,7 @@
 import React from "react";
 import "./Work.css";
 import backimage from "./backgroundImage/backimage.png";
+import backimage2 from "./backgroundImage/backimage2.png";
 
 const Work = () => {
   return (
