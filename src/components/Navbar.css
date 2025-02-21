@@ -1,10 +1,10 @@
 /* Navbar styles */
 .navbar {
   position: fixed;
-  width:92.4%;
+  width:100%;
   top: 0;
   left: 0;
-  padding: 0 4%;
+  padding: 0 3% 0 4%;
   padding-bottom: 5px;
   background-color: #fff;
   color: #000;
@@ -192,12 +192,13 @@ background-color: black; /* Light gray text in dark mode */
   .navbar-right {
     
     /* display: none; */ 
-    padding-right: 170px;
-    gap: 4px;
+    /* padding-right: 170px; */
+    gap: 40px;
   }
 
   .menu-icon {
     display: block;
+    margin-left: -10px;
   }
 
   .navbar-right.open {
@@ -220,4 +221,63 @@ background-color: black; /* Light gray text in dark mode */
     top: 10px;
     right: 20px;
   } */
+}
+@media (max-width:500px) {
+  .navbar-right {
+    gap: 20px
+  }
+
+
+}
+
+@media (max-width:350px) {
+
+  .signup-btn {
+    /* margin-left: 16px;
+    margin-right: 16px; */
+    text-decoration: none;
+    color: black;
+    font-size: 13px;
+    font-weight: 600;
+  
+  }
+
+.login {
+  background: white;
+  border: 2px solid var(--Linear, #E46703);
+  color: #E46703;
+  padding: 2px 2px 2px 2px ;;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 580;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-transform: none;
+  text-decoration: none;
+}
+.login-icon {
+  color:  #E46703 !important;
+  font-size: 20px;
+  text-decoration: none;
+}
+.dark-mode-icon {
+  width: 35px;  /* Adjust size as needed */
+  height: 35px; /* Adjust size as needed */
+}
+.navbar-right {
+    gap: 10px
+  }
+  .login-box {
+    /* background: white; */
+    padding: 8px;
+    
+      text-transform: none;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+  }
 }

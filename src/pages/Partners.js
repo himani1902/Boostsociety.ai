@@ -127,24 +127,31 @@ const Partners = () => {
             }}
           >
             {partnersData.map((partner, index) => (
-              <div key={index} className="partner-card">
-                <div className="partner-card-container">
-                  <img
-                    src={partner.img}
-                    alt={partner.name}
-                    className="card-logo"
-                  />
-                  <div className="card-content">
-                    <h3>{partner.name}</h3>
-                    <p>{partner.desc}</p>
-                    <a href="#">{partner.link}</a>
-                  </div>
-                  <div className="side-design">
-                    <img src={design} alt="corner design" />
-                  </div>
-                </div>
-              </div>
-            ))}
+           <div
+           key={index}
+           className="partner-card" >
+
+            
+         <div className="partner-card-container"
+         style={{ backgroundColor: index % 2 === 0 ?  "rgba(82, 49, 104, 0.1)" : "rgba(255, 188, 109, 0.1)" }}
+    
+    >
+      <img
+        src={partner.img}
+        alt={partner.name}
+        className="card-logo"
+      />
+      <div className="card-content">
+        <h3>{partner.name}</h3>
+        <p>{partner.desc}</p>
+        <a href="#">{partner.link}</a>
+      </div>
+      <div className="side-design">
+        <img src={design} alt="corner design" />
+      </div>
+    </div>
+  </div>
+))}
           </div>
         </div>
         <button

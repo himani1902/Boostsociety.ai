@@ -15,7 +15,7 @@
 }
 
 .partners-content {
-  margin: 10px 10px;
+  margin: 10px 0px;
 }
 
 .partners-content h2 {
@@ -140,7 +140,7 @@
   bottom: 23px;
   left: 40px;
   text-decoration: none;
-  margin: 0px;
+  margin: 0 0 0 6%;
 }
 
 .side-design {
@@ -257,7 +257,7 @@
     .partners-carousel
     .partner-card
     .partner-card-container {
-    min-width: 98%;
+    min-width: 100%;
     height: 272px;
     display: flex;
     justify-content: center;
@@ -268,9 +268,9 @@
   }
 
   .partners-carousel .partner-card .card-logo {
-    top: 50px;
+    top: 20px;
     height: 50px;
-    left: 60px;
+    left: 15%;
   }
   .partners-carousel .partner-card .partner-card-container .card-content {
     margin-top: 20px;
@@ -278,6 +278,7 @@
   .partners-carousel .partner-card .partner-card-container .card-content h3 {
     padding-bottom: 0;
     margin-bottom: 0;
+    font-size: 1rem;
   }
   .partners-carousel .partner-card .partner-card-container .card-content p {
     max-height: 100px;
@@ -313,11 +314,31 @@
   .partners-carousel .partner-card a {
     font-size: 1rem;
   }
+  .partners-content p {
+    margin: 0 0 0 0;
+    font-family: outfit;
+    font-weight: 400;
+    line-height: 1.334;
+    letter-spacing: 0em;
+    font-size: 0.9rem;
+    color: rgba(63, 60, 60, 0.87);
+    text-align: justify;
+  }
 }
 @media (max-width: 600px) {
   .partners-carousel .partner-card a {
     font-size: 1.2rem;
-    margin-bottom: 8%;
-    margin-left: 5%;
+    margin-bottom: 0%;
+   
   }
 }
+@media (max-width: 300px) {
+  .partners-carousel .partner-card a {
+    font-size: 0.9rem;
+    margin-bottom: 0%;
+    left: 9%;
+  }
+}
+
+
+  

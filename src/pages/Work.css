@@ -13,7 +13,7 @@
     width: 100%;
     height: 100%;
     display: flex;
-    align-items: center;
+    align-items: top;
     justify-content: flex-start;
     text-align: left;
    
@@ -25,7 +25,7 @@
     padding-bottom: 20%;
     color: white;
     font-family: "Outfit", sans-serif;
-    height: 60%;
+    height: 100%;
     width: 45%;
     text-align: left;
     position: absolute;
@@ -36,7 +36,7 @@
     font-size: 20px;
     /* font-weight: 600; */
     margin-bottom: 0px;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     /* font-family: "Times New Roman", Times, serif; */
     font-family: "Alumni Sans", sans-serif;
     font-weight: 600;
@@ -218,6 +218,7 @@
   
   .contenttext {
     width: 60%;
+    height: 50%;
   }
   .contenttext p {
     font-size: 40px;

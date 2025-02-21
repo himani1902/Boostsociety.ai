@@ -1,10 +1,15 @@
-import React, { useState } from 'react';
-import './Testimonials.css';
+import React from "react";
+import "./Testimonials.css";
+import { Carousel } from "primereact/carousel";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-import person1 from './backgroundImage/person1.png';
-import person2 from './backgroundImage/person2.png';
-import person3 from './backgroundImage/person3.png';
+import "primereact/resources/themes/lara-light-blue/theme.css";
+import "primereact/resources/primereact.min.css";
+import "primeicons/primeicons.css";
+
+import person1 from "./backgroundImage/person1.png";
+import person2 from "./backgroundImage/person2.png";
+import person3 from "./backgroundImage/person3.png";
 
 const Testimonials = () => {
   const testimonialsData = [
@@ -25,67 +30,47 @@ const Testimonials = () => {
     },
   ];
 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const totalTestimonials = testimonialsData.length;
+  const responsiveOptions = [
+    {
+      breakpoint: "900px",
+      numVisible: 2,
+      numScroll: 1,
+    },
+    {
+      breakpoint: "600px",
+      numVisible: 1,
+      numScroll: 1,
+    },
+  ];
 
-  const nextTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % totalTestimonials);
-  };
-
-  const prevTestimonial = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + totalTestimonials) % totalTestimonials);
+  const testimonialTemplate =  (testimonial, index)  => {
+    return (
+      <div className="testimonial-card"   style={{
+        backgroundColor: index % 2 === 0 ? "#e1e1e1" : "rgba(82, 49, 104, 0.1)", // Pink for even, Red for odd
+      }} >
+        <img src={testimonial.image} alt={testimonial.author} />
+        <p>{testimonial.text}</p>
+        <p className="author">{testimonial.author}</p>
+      </div>
+    );
   };
 
   return (
     <div className="testimonials-container">
       <h1>You Are The Center Of Our Universe</h1>
       <h2>Testimonials</h2>
-      <div className="testimonials">
-        {/* Left Arrow Button */}
-        <button
-          className={`arrow left ${currentIndex === 0 ? 'disabled' : ''}`}
-          style={{
-           
-            position: 'absolute', // Ensure the element is positioned relative to its nearest positioned ancestor
-            top: '67%',
-            left: '6%',
-            transform: 'translate(-50%, -50%)' // Optional: to center the element at the given top and left percentages
-          }}
-          onClick={prevTestimonial}
-          disabled={currentIndex === 0}
-        >
-          <FaChevronLeft />
-        </button>
-
-        {/* Testimonials */}
-        {testimonialsData.map((testimonial, index) => {
-          // Dynamically change background color based on odd or even index
-          const backgroundColor = index % 2 === 0 ? 'rgb(233, 233, 233)' : 'rgba(82, 49, 104, 0.1)';
-          return (
-            <div className="testimonial-card" key={index} style={{ backgroundColor }}>
-              <img src={testimonial.image} alt={testimonial.author} />
-              <p>{testimonial.text}</p>
-              <p className="author">{testimonial.author}</p>
-            </div>
-          );
-        })}
-
-        {/* Right Arrow Button */}
-        <button
-          className={`arrow right ${currentIndex === totalTestimonials - 1 ? 'disabled' : ''}`}
-          style={{
-           
-            position: 'absolute', // Ensure the element is positioned relative to its nearest positioned ancestor
-            top: '67%',
-            right: '3.5%',
-            transform: 'translate(-50%, -50%)' // Optional: to center the element at the given top and left percentages
-          }}
-          onClick={nextTestimonial}
-          disabled={currentIndex === totalTestimonials - 1}
-        >
-          <FaChevronRight />
-        </button>
+      <div className="testimonials-wrapper">
+        <Carousel
+          value={testimonialsData}
+          itemTemplate={testimonialTemplate}
+          numVisible={3}
+          numScroll={1}
+          responsiveOptions={responsiveOptions}
+          showIndicators={false}
+          showNavigators={true}
+        />
       </div>
+      
     </div>
   );
 };
